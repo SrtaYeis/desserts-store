@@ -1,0 +1,16 @@
+interface Props { quantity?: number }
+interface Props { quantity?: number }
+// Muestra la cantidad seleccionada junto con los controles visuales de cantidad.
+export default function QuantityStepper({ quantity = 1 }: Props) {
+  return (
+    <div className="flex w-40 items-center justify-between rounded-full bg-red px-3 py-3 text-white">
+      <button type="button" aria-label="Disminuir cantidad" className="grid size-5 place-items-center rounded-full transition hover:opacity-70">
+        <img src="/images/icon-decrement-quantity.svg" alt="" />
+      </button>
+      <span className="text-sm font-semibold">{quantity}</span>
+      <button type="button" aria-label="Aumentar cantidad" className="grid size-5 place-items-center rounded-full transition hover:opacity-70">
+        <img src="/images/icon-increment-quantity.svg" alt="" />
+      </button>
+    </div>
+  );
+}
