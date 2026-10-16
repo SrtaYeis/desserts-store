@@ -1,6 +1,5 @@
 interface Props { onPreviewOrder: () => void }
-interface Props { onPreviewOrder: () => void }
-// Muestra el estado vacío del carrito y permite abrir la vista de confirmación.
+
 export default function CartDrawer({ onPreviewOrder }: Props) {
   return (
     <aside aria-label="Carrito de compras" className="h-fit rounded-xl bg-white p-6">

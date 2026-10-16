@@ -1,16 +1,13 @@
-import { products } from '../data/products';
-
 interface Props { open: boolean; onClose: () => void }
 
-// Elementos de muestra para previsualizar la confirmación sin un carrito real.
+// Datos de muestra: el modal sigue siendo solo visual hasta el Nivel 3
 const sample = [
-  { product: products[3], qty: 1 },
-  { product: products[1], qty: 4 },
-  { product: products[8], qty: 2 },
+  { name: 'Classic Tiramisu', price: 5.5, qty: 1, img: '/images/image-tiramisu-thumbnail.jpg' },
+  { name: 'Vanilla Bean Crème Brûlée', price: 7, qty: 4, img: '/images/image-creme-brulee-thumbnail.jpg' },
+  { name: 'Vanilla Panna Cotta', price: 6.5, qty: 2, img: '/images/image-panna-cotta-thumbnail.jpg' },
 ];
-const total = sample.reduce((s, i) => s + i.product.price * i.qty, 0);
+const total = sample.reduce((s, i) => s + i.price * i.qty, 0);
 
-// Presenta el pedido de muestra cuando está abierto y permite cerrar el modal.
 export default function ConfirmOrderModal({ open, onClose }: Props) {
   if (!open) return null;
   return (
@@ -21,14 +18,14 @@ export default function ConfirmOrderModal({ open, onClose }: Props) {
         <p className="mt-2 text-rose-500">We hope you enjoy your food!</p>
 
         <ul className="mt-8 rounded-lg bg-rose-50 p-5">
-          {sample.map(({ product: p, qty }) => (
-            <li key={p.id} className="flex items-center gap-4 border-b border-rose-100 py-3">
-              <img src={p.image.thumbnail} alt="" className="size-12 rounded" />
+          {sample.map((i) => (
+            <li key={i.name} className="flex items-center gap-4 border-b border-rose-100 py-3">
+              <img src={i.img} alt="" className="size-12 rounded" />
               <div className="flex-1">
-                <p className="text-sm font-semibold">{p.name}</p>
-                <p className="text-sm"><span className="font-semibold text-red">{qty}x</span> <span className="text-rose-500">@ ${p.price.toFixed(2)}</span></p>
+                <p className="text-sm font-semibold">{i.name}</p>
+                <p className="text-sm"><span className="font-semibold text-red">{i.qty}x</span> <span className="text-rose-500">@ ${i.price.toFixed(2)}</span></p>
               </div>
-              <span className="font-semibold">${(p.price * qty).toFixed(2)}</span>
+              <span className="font-semibold">${(i.price * i.qty).toFixed(2)}</span>
             </li>
           ))}
           <li className="flex items-center justify-between pt-5">

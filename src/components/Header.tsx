@@ -1,4 +1,3 @@
-// Muestra el título principal de la página de postres.
 export default function Header() {
   return (
     <header>

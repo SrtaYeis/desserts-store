@@ -1,6 +1,5 @@
 interface Props { quantity?: number }
-interface Props { quantity?: number }
-// Muestra la cantidad seleccionada junto con los controles visuales de cantidad.
+
 export default function QuantityStepper({ quantity = 1 }: Props) {
   return (
     <div className="flex w-40 items-center justify-between rounded-full bg-red px-3 py-3 text-white">

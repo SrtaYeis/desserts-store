@@ -1,6 +1,5 @@
-// Define los datos que necesita cada postre para mostrarse en la aplicación.
 export interface Product {
-  id: number;
+  id: string;
   name: string;
   category: string;
   price: number;
