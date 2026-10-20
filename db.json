@@ -3,101 +3,150 @@
     {
       "id": "1",
       "name": "Waffle with Berries",
-      "category": "Waffle",
       "price": 6.5,
       "image": {
         "thumbnail": "/images/image-waffle-thumbnail.jpg",
         "mobile": "/images/image-waffle-mobile.jpg",
         "desktop": "/images/image-waffle-desktop.jpg"
-      }
+      },
+      "categoryId": "1"
     },
     {
       "id": "2",
       "name": "Vanilla Bean Crème Brûlée",
-      "category": "Crème Brûlée",
-      "price": 7.0,
+      "price": 7,
       "image": {
         "thumbnail": "/images/image-creme-brulee-thumbnail.jpg",
         "mobile": "/images/image-creme-brulee-mobile.jpg",
         "desktop": "/images/image-creme-brulee-desktop.jpg"
-      }
+      },
+      "categoryId": "2"
     },
     {
       "id": "3",
       "name": "Macaron Mix of Five",
-      "category": "Macaron",
-      "price": 8.0,
+      "price": 8,
       "image": {
         "thumbnail": "/images/image-macaron-thumbnail.jpg",
         "mobile": "/images/image-macaron-mobile.jpg",
         "desktop": "/images/image-macaron-desktop.jpg"
-      }
+      },
+      "categoryId": "3"
     },
     {
       "id": "4",
       "name": "Classic Tiramisu",
-      "category": "Tiramisu",
       "price": 5.5,
       "image": {
         "thumbnail": "/images/image-tiramisu-thumbnail.jpg",
         "mobile": "/images/image-tiramisu-mobile.jpg",
         "desktop": "/images/image-tiramisu-desktop.jpg"
-      }
+      },
+      "categoryId": "4"
     },
     {
       "id": "5",
       "name": "Pistachio Baklava",
-      "category": "Baklava",
-      "price": 4.0,
+      "price": 4,
       "image": {
         "thumbnail": "/images/image-baklava-thumbnail.jpg",
         "mobile": "/images/image-baklava-mobile.jpg",
         "desktop": "/images/image-baklava-desktop.jpg"
-      }
+      },
+      "categoryId": "5"
     },
     {
       "id": "6",
       "name": "Lemon Meringue Pie",
-      "category": "Pie",
-      "price": 5.0,
+      "price": 5,
       "image": {
         "thumbnail": "/images/image-meringue-thumbnail.jpg",
         "mobile": "/images/image-meringue-mobile.jpg",
         "desktop": "/images/image-meringue-desktop.jpg"
-      }
+      },
+      "categoryId": "6"
     },
     {
       "id": "7",
       "name": "Red Velvet Cake",
-      "category": "Cake",
       "price": 4.5,
       "image": {
         "thumbnail": "/images/image-cake-thumbnail.jpg",
         "mobile": "/images/image-cake-mobile.jpg",
         "desktop": "/images/image-cake-desktop.jpg"
-      }
+      },
+      "categoryId": "7"
     },
     {
       "id": "8",
       "name": "Salted Caramel Brownie",
-      "category": "Brownie",
       "price": 5.5,
       "image": {
         "thumbnail": "/images/image-brownie-thumbnail.jpg",
         "mobile": "/images/image-brownie-mobile.jpg",
         "desktop": "/images/image-brownie-desktop.jpg"
-      }
+      },
+      "categoryId": "8"
     },
     {
       "id": "9",
       "name": "Vanilla Panna Cotta",
-      "category": "Panna Cotta",
       "price": 6.5,
       "image": {
         "thumbnail": "/images/image-panna-cotta-thumbnail.jpg",
         "mobile": "/images/image-panna-cotta-mobile.jpg",
         "desktop": "/images/image-panna-cotta-desktop.jpg"
-      }
+      },
+      "categoryId": "9"
+    },
+    {
+      "name": "jaja",
+      "price": 6,
+      "categoryId": "3",
+      "image": {
+        "thumbnail": "/images/image-cake-desktop.jpg",
+        "mobile": "/images/image-cake-desktop.jpg",
+        "desktop": "/images/image-cake-desktop.jpg"
+      },
+      "id": "3hB0ArL"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Waffle"
+    },
+    {
+      "id": "2",
+      "name": "Crème Brûlée"
+    },
+    {
+      "id": "3",
+      "name": "Macaron"
+    },
+    {
+      "id": "4",
+      "name": "Tiramisu"
+    },
+    {
+      "id": "5",
+      "name": "Baklava"
+    },
+    {
+      "id": "6",
+      "name": "Pie"
+    },
+    {
+      "id": "7",
+      "name": "Cake"
+    },
+    {
+      "id": "8",
+      "name": "Brownie"
+    },
+    {
+      "id": "9",
+      "name": "Panna Cotta"
     }
   ]
 }
