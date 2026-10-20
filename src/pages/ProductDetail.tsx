@@ -9,7 +9,9 @@ import { useProduct } from '../hooks/useProductsQueries';
 import { useProductsMutations } from '../hooks/useProductsMutations';
 import StateMessage from '../components/StateMessage';
 import ConfirmDialog from '../components/ConfirmDialog';
+import QuantityStepper from '../components/QuantityStepper';
 import NotFound from './NotFound';
+import { useCartStore } from '../stores/cartStore';
 
 export default function ProductDetail() {
   const { id = '' } = useParams();
@@ -17,6 +19,8 @@ export default function ProductDetail() {
   const [confirming, setConfirming] = useState(false);
   const { data: product, isLoading, isError, error, refetch } = useProduct(id);
   const { remove } = useProductsMutations();
+  const item = useCartStore((s) => (product ? s.items.find((i) => i.id === product.id) : undefined));
+  const { add, increase, decrease } = useCartStore();
 
   if (isLoading) return <div className="mt-8 aspect-square max-w-md animate-pulse rounded-lg bg-rose-100" aria-hidden />;
   if (isError) {
@@ -36,6 +40,25 @@ export default function ProductDetail() {
           {product.category && <span className="rounded-full bg-rose-100 px-3 py-1 text-sm text-rose-500">{product.category.name}</span>}
           <h2 className="mt-3 text-3xl font-bold">{product.name}</h2>
           <p className="mt-2 text-2xl font-semibold text-red">${product.price.toFixed(2)}</p>
+
+          <div className="mt-6 flex items-center gap-3">
+            {item ? (
+              <QuantityStepper
+                quantity={item.quantity}
+                onIncrement={() => increase(product.id)}
+                onDecrement={() => decrease(product.id)}
+              />
+            ) : (
+              <button
+                type="button"
+                onClick={() => add({ id: product.id, name: product.name, price: product.price, thumbnail: product.image.thumbnail })}
+                className="rounded-full bg-red px-6 py-3 font-semibold text-white hover:bg-[#952c0b]"
+              >
+                Agregar al carrito
+              </button>
+            )}
+          </div>
+
           <div className="mt-6 flex gap-3">
             <Link to={`/producto/${id}/editar`} className="rounded-full border border-rose-300 px-6 py-2 font-semibold hover:border-red hover:text-red">Editar</Link>
             <button onClick={() => setConfirming(true)} className="rounded-full bg-red px-6 py-2 font-semibold text-white hover:bg-[#952c0b]">Eliminar</button>
