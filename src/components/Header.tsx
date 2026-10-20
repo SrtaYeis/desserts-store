@@ -1,3 +1,7 @@
+/**
+ * Cabecera principal de la tienda.
+ * Actualmente muestra el nombre de la marca y sirve como encabezado visual de la app.
+ */
 export default function Header() {
   return (
     <header>

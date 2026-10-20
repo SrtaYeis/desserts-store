@@ -1,3 +1,7 @@
+/**
+ * Página reutilizable para crear o editar un producto.
+ * Se usa tanto en modo "nuevo" como en modo "edición" según la URL.
+ */
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useProduct } from '../hooks/useProductsQueries';
 import { useProductsMutations } from '../hooks/useProductsMutations';

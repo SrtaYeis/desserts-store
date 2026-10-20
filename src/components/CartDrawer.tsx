@@ -1,3 +1,7 @@
+/**
+ * Panel lateral del carrito.
+ * Muestra los productos elegidos, su precio total y la opción de confirmar el pedido.
+ */
 import { selectCount, selectTotal, useCartStore } from '../stores/cartStore';
 
 export default function CartDrawer({ onConfirm }: { onConfirm: () => void }) {

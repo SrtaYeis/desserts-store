@@ -1,3 +1,7 @@
+/**
+ * Tarjeta de producto.
+ * Muestra la información básica del postre y permite añadirlo al carrito.
+ */
 import { Link } from 'react-router-dom';
 import type { Product } from '../interfaces/product';
 import QuantityStepper from './QuantityStepper';

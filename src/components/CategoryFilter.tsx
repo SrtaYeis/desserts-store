@@ -1,3 +1,7 @@
+/**
+ * Filtro de categorías.
+ * Muestra botones para seleccionar una categoría y refrescar la lista de productos.
+ */
 import { useCategories } from '../hooks/useProductsQueries';
 
 interface Props { value: string; onChange: (id: string) => void }

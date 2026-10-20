@@ -1,3 +1,7 @@
+/**
+ * Vista para rutas no encontradas.
+ * Se muestra cuando el usuario visita una URL que no existe dentro de la tienda.
+ */
 import { Link } from 'react-router-dom';
 
 export default function NotFound() {

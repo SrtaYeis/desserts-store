@@ -1,3 +1,8 @@
+/**
+ * Componente principal de la tienda.
+ * Define el layout general de la aplicación: cabecera, contenido principal,
+ * carrito lateral y modal de confirmación del pedido.
+ */
 import { useState } from 'react';
 import Header from './components/Header';
 import CartDrawer from './components/CartDrawer';

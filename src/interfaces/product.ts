@@ -1,3 +1,7 @@
+/**
+ * Definiciones del modelo de producto y categorías.
+ * Sirven para tipar la información que llega desde la API y se usa en la UI.
+ */
 export interface Category { id: string; name: string }
 
 export interface Product {

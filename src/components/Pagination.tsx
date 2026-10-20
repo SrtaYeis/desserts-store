@@ -1,3 +1,7 @@
+/**
+ * Componente de paginación.
+ * Controla la navegación entre páginas del catálogo de postres.
+ */
 interface Props { page: number; pages: number; onChange: (p: number) => void }
 
 export default function Pagination({ page, pages, onChange }: Props) {

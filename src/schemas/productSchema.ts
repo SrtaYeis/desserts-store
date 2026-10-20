@@ -1,3 +1,7 @@
+/**
+ * Esquema de validación para formularios de productos.
+ * Garantiza que los datos ingresados tengan formato correcto antes de enviarlos.
+ */
 import { z } from 'zod';
 
 export const productSchema = z.object({

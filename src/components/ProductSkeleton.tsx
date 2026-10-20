@@ -1,3 +1,7 @@
+/**
+ * Esqueleto de carga para la lista de productos.
+ * Simula la estructura de una tarjeta mientras la información aún está cargando.
+ */
 export default function ProductSkeleton() {
   return (
     <div className="animate-pulse" aria-hidden>

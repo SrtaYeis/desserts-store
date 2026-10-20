@@ -1,3 +1,8 @@
+/**
+ * Estado global del carrito de compras.
+ * Guarda los productos agregados, sus cantidades y los cálculos del total.
+ * También persiste la información en localStorage para no perder el carrito al recargar.
+ */
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { CartItem } from '../interfaces/cart';

@@ -1,3 +1,7 @@
+/**
+ * Hooks para crear, actualizar y eliminar productos.
+ * También marcan mensajes de éxito o error con react-hot-toast y refrescan la lista.
+ */
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 import { createProduct, deleteProduct, updateProduct } from '../services/productsService';

@@ -1,3 +1,7 @@
+/**
+ * Modal de confirmación del pedido.
+ * Se abre al pulsar "Confirm Order" y muestra el resumen final antes de reiniciar el carrito.
+ */
 import { selectTotal, useCartStore } from '../stores/cartStore';
 
 interface Props { open: boolean; onClose: () => void }

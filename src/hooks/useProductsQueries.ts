@@ -1,3 +1,7 @@
+/**
+ * Hooks de lectura para productos y categorías.
+ * Aquí se conectan las consultas con React Query para obtener datos de la API.
+ */
 import { useQuery } from '@tanstack/react-query';
 import { getCategories, getProduct, getProducts, type ProductFilters } from '../services/productsService';
 

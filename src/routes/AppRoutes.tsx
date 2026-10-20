@@ -1,3 +1,7 @@
+/**
+ * Configura las rutas principales de la aplicación.
+ * Aquí se definen las pantallas de inicio, detalle, formulario y error 404.
+ */
 import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import ProductDetail from '../pages/ProductDetail';

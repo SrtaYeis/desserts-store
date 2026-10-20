@@ -1,3 +1,7 @@
+/**
+ * Barra de búsqueda.
+ * Permite filtrar productos por nombre mientras el usuario escribe.
+ */
 interface Props { value: string; onChange: (v: string) => void }
 
 export default function SearchBar({ value, onChange }: Props) {

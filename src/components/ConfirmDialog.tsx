@@ -1,3 +1,7 @@
+/**
+ * Diálogo de confirmación.
+ * Se usa para pedir confirmación antes de borrar un producto o ejecutar una acción sensible.
+ */
 interface Props { open: boolean; title: string; text: string; loading?: boolean; onConfirm: () => void; onCancel: () => void }
 
 export default function ConfirmDialog({ open, title, text, loading, onConfirm, onCancel }: Props) {

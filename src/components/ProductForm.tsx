@@ -1,3 +1,7 @@
+/**
+ * Formulario reutilizable para crear o editar un postre.
+ * Valida los datos con Zod y se usa desde la página del producto.
+ */
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { productSchema, type ProductFormValues } from '../schemas/productSchema';

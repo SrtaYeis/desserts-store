@@ -1,3 +1,7 @@
+/**
+ * Mensaje reutilizable para estados vacíos, errores o cargas.
+ * Ayuda a mostrar feedback claro al usuario sin repetir UI.
+ */
 interface Props { title: string; text: string; actionLabel?: string; onAction?: () => void }
 
 export default function StateMessage({ title, text, actionLabel, onAction }: Props) {

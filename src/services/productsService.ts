@@ -1,3 +1,8 @@
+/**
+ * Servicio de productos.
+ * Encapsula todas las llamadas a la API para listar, crear, editar,
+ * eliminar y consultar productos y categorías.
+ */
 import { api } from './api';
 import type { Category, Product, ProductPayload } from '../interfaces/product';
 

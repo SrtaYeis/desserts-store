@@ -1,3 +1,7 @@
+/**
+ * Vista principal de la tienda.
+ * Muestra el buscador, filtros, catálogo de productos y la paginación.
+ */
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';

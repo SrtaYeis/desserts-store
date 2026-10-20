@@ -1,3 +1,7 @@
+/**
+ * Pantalla de detalle del producto.
+ * Carga la información del postre seleccionado y permite editar o eliminarlo.
+ */
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { isAxiosError } from 'axios';

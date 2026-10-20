@@ -1,3 +1,8 @@
+/**
+ * Punto de entrada principal de la aplicación.
+ * Aquí se crea el árbol de React, se monta el router, se prepara
+ * React Query para las peticiones y se activa el sistema de toasts.
+ */
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';

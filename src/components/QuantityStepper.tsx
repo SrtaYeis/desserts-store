@@ -1,3 +1,7 @@
+/**
+ * Control de cantidad para el carrito.
+ * Permite sumar o restar unidades del mismo producto de forma visual y rápida.
+ */
 interface Props { quantity: number; onIncrement: () => void; onDecrement: () => void }
 
 export default function QuantityStepper({ quantity, onIncrement, onDecrement }: Props) {
